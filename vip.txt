@@ -6,17 +6,10 @@
 
 #
 
-# server:
+# server: all / blue / green / red / lime / chocolate
 
-# all / blue / green / red / lime / chocolate
+# theme: gold / cyan / purple / red / green / white
 
-#
-
-# theme:
-
-# gold / cyan / purple / red / green / white
-
-green | 908901 | Makar_Maslow | ★ VIP | ★ Tester | red
+green | 908901 | Makar_Maslow | ★ VIP Tester | red
 green | 12345 | Fernando_Backer | ★ Tester | cyan
 blue | 55555 | Some_Player | ★ Premium | purple
-
