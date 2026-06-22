@@ -1,1 +1,22 @@
+# MS Helper VIP list
+
+# Формат:
+
+# server | account_id | nick | prefix | theme
+
+#
+
+# server:
+
+# all / blue / green / red / lime / chocolate
+
+#
+
+# theme:
+
+# gold / cyan / purple / red / green / white
+
+all | 90890 | Makar_Maslow | ★ VIP | ★ Tester | red
+green | 12345 | Fernando_Backer | ★ Tester | cyan
+blue | 55555 | Some_Player | ★ Premium | purple
 
