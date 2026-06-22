@@ -1,4 +1,4 @@
-green | 908901 | Makar_Maslow | ★ Tester | red
-blue | 1346503 | Makar_Maslow | ★ Tester | red
-blue | 1480390 | Sergio_Cerezon | ★ Tester | blue
-blue | 816721 | Christian_Flame | ★ Tester | blue
+green | 908901 | Makar_Maslow | Admin Tester | red
+blue | 1346503 | Makar_Maslow | Admin Tester | red
+blue | 1480390 | Sergio_Cerezon | Tester | blue
+blue | 816721 | Christian_Flame | Tester | blue
