@@ -1,4 +1,14 @@
-green | 908901 | Makar_Maslow | Admin Tester | red
-blue | 1346503 | Makar_Maslow | Admin Tester | red
-blue | 1480390 | Sergio_Cerezon | Tester | blue
-blue | 816721 | Christian_Flame | Tester | blue
+; MS Helper GitHub status list
+; Encoding: UTF-8
+; Only players listed in [players] will have a prefix/status under nickname.
+
+[settings]
+enabled=true
+draw_distance=35
+offset_y=14
+color=FFFF4040
+
+[players]
+Makar_Maslow=Разработчик
+Sergio_Cerezon=Тестер
+Christian_Flame=Тестер
