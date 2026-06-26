@@ -1,4 +1,5 @@
-
+version=BETA 1.0
+url=https://raw.githubusercontent.com/MakarMaslow/mshelper-data/main/MSHelper.lua
 script_name('MS Helper')
 script_author('Makar Maslow And Anray Maslow')
 script_description('MSHelper')
