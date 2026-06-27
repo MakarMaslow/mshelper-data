@@ -1,2 +1,2 @@
-version=1
+version=BETA 1.0
 url=https://raw.githubusercontent.com/MakarMaslow/mshelper-data/main/MSHelper.lua
