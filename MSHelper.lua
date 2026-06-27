@@ -12498,12 +12498,13 @@ MSHelper_HomeAddonStart_V17 = nil
 
 
 -- =========================================================
--- MSHelper v23 GitHub update checker
+-- MSHelper v1 GitHub update checker
 -- /msupdate       - проверить и скачать обновление
 -- /msupdate install - скачать и сразу заменить старый файл новым
 -- /msapplyupdate  - применить скачанное обновление
 -- =========================================================
-MSH_UPDATER_VERSION = 23
+MSH_UPDATER_VERSION = 1
+MSH_UPDATER_VERSION_TEXT = '1'
 MSH_UPDATER_VERSION_URL = 'https://raw.githubusercontent.com/MakarMaslow/mshelper-data/main/mshelper_version.txt'
 
 function MSH_UpdDir()
@@ -12574,12 +12575,15 @@ function MSH_UpdWrite(path, data)
 end
 
 function MSH_UpdParseVersion(data)
-    local result = { version = 0, url = '' }
+    local result = { version = 0, version_text = '', url = '' }
     for line in (tostring(data or ''):gsub('\r','') .. '\n'):gmatch('(.-)\n') do
         local k, v = line:match('^%s*([%w_]+)%s*=%s*(.-)%s*$')
         if k and v then
             k = k:lower()
-            if k == 'version' then result.version = tonumber(v) or 0 end
+            if k == 'version' then
+                result.version_text = tostring(v or '')
+                result.version = tonumber(v) or tonumber(tostring(v):match('(%d+%.?%d*)')) or 0
+            end
             if k == 'url' then result.url = v end
         end
     end
@@ -12618,14 +12622,14 @@ function MSH_CheckUpdate(silent, auto_apply)
         local data = MSH_UpdRead(MSH_UPDATER_VERSION_FILE)
         local info = MSH_UpdParseVersion(data)
         if (tonumber(info.version) or 0) <= MSH_UPDATER_VERSION then
-            if not silent then MSH_UpdMsg('Обновлений нет. Текущая версия: v' .. tostring(MSH_UPDATER_VERSION) .. '.') end
+            if not silent then MSH_UpdMsg('Обновлений нет. Текущая версия: v' .. tostring(MSH_UPDATER_VERSION_TEXT or MSH_UPDATER_VERSION) .. '.') end
             return
         end
         if tostring(info.url or '') == '' then
             MSH_UpdMsg('Обновление найдено, но в mshelper_version.txt нет url=...', 0xFFFF4040)
             return
         end
-        MSH_UpdMsg('Найдена новая версия v' .. tostring(info.version) .. '. Скачиваю...')
+        MSH_UpdMsg('Найдена новая версия v' .. tostring(info.version_text ~= '' and info.version_text or info.version) .. '. Скачиваю...')
         MSH_UPDATER_BUSY = true
         MSH_UpdDownload(info.url, MSH_UPDATER_DOWNLOAD_FILE, function(ok2)
             MSH_UPDATER_BUSY = false
@@ -12712,4 +12716,3 @@ lua_thread.create(function()
 end)
 
 -- MSHelper v21: /mshome uses GTA waypoint + dark cross blips for better visibility.
-
