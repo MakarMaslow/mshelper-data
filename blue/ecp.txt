@@ -1,4 +1,4 @@
-version=18.06.2026
+version=30.06.2026
 
 mvd=1
 pravo=3000
