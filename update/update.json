@@ -1,5 +1,5 @@
 {
-  "последний": "1.0.2",
+  "latest": "1.0.2",
   "updateurl": "https://raw.githubusercontent.com/MakarMaslow/mshelper-data/main/update/MSHelper.luac",
-  "журнал изменений": "https://raw.githubusercontent.com/MakarMaslow/mshelper-data/main/update/changelog.txt"
+  "changelog": "https://raw.githubusercontent.com/MakarMaslow/mshelper-data/main/update/changelog.txt"
 }
