@@ -1,0 +1,4 @@
+BETA 1.0.1
+- Обновлятор переведён в строгий LUAC-режим.
+- Если updateurl ведёт на MSHelper.luac, скрипт больше не создаёт MSHelper.lua.
+- При обновлении удаляются старые MSHelper.lua / backup / update-файлы, чтобы CTRL+R не запускал две копии.
