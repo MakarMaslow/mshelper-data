@@ -1,4 +1,0 @@
-version=1.0.1
-file=MSHelper.lua
-url=https://raw.githubusercontent.com/MakarMaslow/mshelper-data/main/update/MSHelper.lua
-min_size=100000
