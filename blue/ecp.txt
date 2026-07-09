@@ -1,6 +1,6 @@
 version=30.06.2026
 
-mvd=1
+mvd=3000
 pravo=3000
 mz=3000
 mo=1
