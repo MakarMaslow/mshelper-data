@@ -1,16 +1,16 @@
 version=30.06.2026
 
-mvd=3000
-pravo=3000
-mz=3000
+mvd=1
+pravo=1
+mz=1
 mo=1
-smi=3000
-civil=800
-private=3000
-lkn=3000
-yakuza=3000
-rm=3000
-gangs=2500
+smi=1
+civil=1
+private=1
+lkn=1
+yakuza=1
+rm=1
+gangs=1
 surgery=50000
 gender=5000
 heal=300
