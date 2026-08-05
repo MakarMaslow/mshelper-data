@@ -1,9 +1,9 @@
 version=30.06.2026
 
-mvd=3000
+mvd=1
 pravo=3000
 mz=3000
-mo=1
+mo=3000
 smi=3000
 civil=800
 private=3000
