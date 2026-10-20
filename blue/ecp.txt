@@ -12,5 +12,5 @@ yakuza=3000
 rm=3000
 gangs=2500
 surgery=50000
-gender=5000
-heal=300
+gender=10000
+heal=600
